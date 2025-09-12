@@ -18,12 +18,10 @@ use App\Http\Controllers\SuggestionController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 Route::get('/etudiants', [EtudiantController::class, 'index'])->name('etudiants.index');
