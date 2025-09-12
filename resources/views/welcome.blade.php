@@ -68,7 +68,7 @@
         <ul class="navbar-nav ml-auto">
             @auth
               <li class="nav-item">
-               <a class="nav-link" href="{{ url('/home') }}">Accueil</a>
+               <a class="nav-link" href="{{ route('home') }}">Accueil</a>
                </li>
             @else
                <li class="nav-item">
