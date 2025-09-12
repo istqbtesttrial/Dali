@@ -47,21 +47,21 @@ class FormationController extends Controller
            'description'=> 'required',
            'matieres'=> 'required',
            'formateurs'=> 'required',
-           'etutiants'=>'required',
+           'etudiants'=> 'required',
          
            
         ]);
 
-        $suggestion= suggestion::create([
+        Formation::create([
             'niveau'=> $request->niveau,
             'specialite'=> $request->specialite,
             'description'=> $request->description,
-           'matieres'=> $request->matieres,
-           'formateurs'=> $request->formateurs,
-           'etudiants'=> $request->etudiants,
-           'groupe'=> $request->groupe,
-          
-          
+            'matieres'=> $request->matieres,
+            'formateurs'=> $request->formateurs,
+            'etudiants'=> $request->etudiants,
+            'groupe'=> $request->groupe,
+
+
         ]);
 
           return redirect()->back();
@@ -72,13 +72,13 @@ class FormationController extends Controller
 
     public function edit($id)
     {
-         $formation = formation::where('id', $id)->first();
+         $formation = Formation::where('id', $id)->first();
         return view('formations.edit')-> with('formation',$formation);
     }
 
     public function update(Request $request, $id)
     {
-        $formation = formation::find($id);
+        $formation = Formation::find($id);
         $this->validate($request, [
             'niveau'=> 'required',
             'specialite'=>'required',
@@ -93,14 +93,13 @@ class FormationController extends Controller
      $formation->matieres =$request->matieres;
      $formation->groupe=$request->groupe;
      $formation->etudiants =$request->etudiants;
-     $formation->id;
      $formation-> save();
       return redirect()->back();
     }
 
     public function destroy($id)
     {
-        $formation = formation::find($id);
+        $formation = Formation::find($id);
 
         if($formation===null){
          return redirect()->back();
