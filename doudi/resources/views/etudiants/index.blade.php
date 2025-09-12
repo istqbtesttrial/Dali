@@ -1,7 +1,6 @@
 @extends('layouts.app')
-@section('content')
 
-  <body>
+@section('content')
     <div class="container">
 
         <div class="side-app">
