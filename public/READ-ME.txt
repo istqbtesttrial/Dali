@@ -1,6 +1,5 @@
-  =>  Template Name    : eLEARNING - eLearning HTML Template
+  =>  Template Name    : Ecole de Formation des Cadres - HTML Template
 
-  =>  Template Link    : https://htmlcodex.com/elearning-html-template
 
   =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
 

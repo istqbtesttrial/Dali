@@ -116,6 +116,10 @@
     height: 75px;
 }
 
+.navbar-brand h2 {
+    font-size: 1.25rem;
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: var(--dark);
     font-weight: 500;
