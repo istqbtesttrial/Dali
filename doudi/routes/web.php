@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EtudiantController;
+use App\Http\Controllers\FormationController;
+use App\Http\Controllers\SuggestionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,18 +31,18 @@ Route::delete('/etudiants/{id}', [EtudiantController::class, 'destroy'])->name('
 
 
 //formations
-Route::get('/formations', 'FormationController@index')->name('formations');
-Route::get('/formation/delete/{id}', 'FormationController@destroy')->name('formation.delete');
-Route::get('/formation/create', 'FormationController@create')->name('formation.create');
-Route::post('/formation//store', 'FormationController@store')->name('formation.store');
-Route::get('/formation/edit/{id}', 'FormationController@edit')->name('formation.edit');
-Route::post('/formation/update/{id}', 'FormationController@update')->name('formation.update');
+Route::get('/formations', [FormationController::class, 'index'])->name('formations');
+Route::get('/formation/delete/{id}', [FormationController::class, 'destroy'])->name('formation.delete');
+Route::get('/formation/create', [FormationController::class, 'create'])->name('formation.create');
+Route::post('/formation/store', [FormationController::class, 'store'])->name('formation.store');
+Route::get('/formation/edit/{id}', [FormationController::class, 'edit'])->name('formation.edit');
+Route::post('/formation/update/{id}', [FormationController::class, 'update'])->name('formation.update');
 
 //suggestions
-Route::get('/suggestions', 'SuggestionController@index')->name('suggestions');
-Route::get('/suggestion/delete/{id}', 'SuggestionController@destroy')->name('suggestion.delete');
-Route::get('/suggestion/create', 'SuggestionController@create')->name('suggestion.create');
-Route::post('/suggestion//store', 'SuggestionController@store')->name('suggestion.store');
-Route::get('/suggestion/edit/{id}', 'SuggestionController@edit')->name('suggestion.edit');
-Route::post('/suggestion/update/{id}', 'SuggestionController@update')->name('suggestion.update');
+Route::get('/suggestions', [SuggestionController::class, 'index'])->name('suggestions');
+Route::get('/suggestion/delete/{id}', [SuggestionController::class, 'destroy'])->name('suggestion.delete');
+Route::get('/suggestion/create', [SuggestionController::class, 'create'])->name('suggestion.create');
+Route::post('/suggestion/store', [SuggestionController::class, 'store'])->name('suggestion.store');
+Route::get('/suggestion/edit/{id}', [SuggestionController::class, 'edit'])->name('suggestion.edit');
+Route::post('/suggestion/update/{id}', [SuggestionController::class, 'update'])->name('suggestion.update');
 
