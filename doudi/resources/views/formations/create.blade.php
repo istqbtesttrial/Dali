@@ -2,47 +2,62 @@
 
 @section('content')
 <div class="page-leftheader">
-    <h4 class="page-title mb-0 text-primary">Ajouter une absence</h4>
+    <h4 class="page-title mb-0 text-primary">Ajouter une formation</h4>
 </div>
 <div class="card">
     <div class="card-header">
-        <a class="btn btn-primary buttons-copy buttons-html5" href = "{{route('absences')}}">Liste des absences</a>
+        <a class="btn btn-primary buttons-copy buttons-html5" href="{{ route('formations') }}">Liste des formations</a>
     </div>
     <div class="card-body pb-2">
-        <form class="" action="{{route('absence.store')}}" method="POST" enctype="multipart/form-data">
+        <form class="" action="{{ route('formation.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
-        
+
             <div class="col-sm-6 col-md-6">
-            <div class="form-group">
-              <label class="form-label">Nom <span class="text-red">*</span></label>
-              <input type="text" class="form-control" placeholder="Entrer le nom de stagiaire absent "   name="nom">
+                <div class="form-group">
+                    <label class="form-label">Niveau <span class="text-red">*</span></label>
+                    <input type="text" class="form-control" placeholder="Entrer le niveau de la formation" name="niveau">
+                </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-md-6">
-            <div class="form-group">
-              <label class="form-label">Prenom <span class="text-red">*</span></label>
-              <input type="text" class="form-control" placeholder="Entrer le prénom de stagiaire absent " name="prenom">
+
+            <div class="col-sm-6 col-md-6">
+                <div class="form-group">
+                    <label class="form-label">Spécialité <span class="text-red">*</span></label>
+                    <input type="text" class="form-control" placeholder="Entrer la spécialité de la formation" name="specialite">
+                </div>
             </div>
-          </div>
+
+            <div class="col-sm-6 col-md-6">
+                <div class="form-group">
+                    <label class="form-label">Groupe <span class="text-red">*</span></label>
+                    <input type="text" class="form-control" placeholder="Entrer le groupe de la formation" name="groupe">
+                </div>
+            </div>
+
             <div class="form-group">
-          <label for="exampleFormControlTextarea1">Justification</label>
-        
+                <label class="form-label">Formateurs <span class="text-red">*</span></label>
+                <input type="text" class="form-control" placeholder="Entrer les formateurs de la formation" name="formateurs">
+            </div>
 
-        <textarea class="form-control mb-4" placeholder="veuillez saisir la justification d'absence" rows="3" name="justification"></textarea>
-        </div>
-         
-          <div>
-            <label class="form-label">Veuillez saisir la date  d'absence<span class="text-red">*</span></label>
+            <div class="form-group">
+                <label class="form-label">Matières <span class="text-red">*</span></label>
+                <input type="text" class="form-control" placeholder="Entrer les matières de la formation" name="matieres">
+            </div>
 
-            <input type="date" id="bday" name="date">
-          </div></div>
-          <div class="form-group">
-           <button class="btn btn-pill btn-primary" type="submit">Enregister</button>
-           </div>
+            <div class="form-group">
+                <label class="form-label">Étudiants <span class="text-red">*</span></label>
+                <input type="text" class="form-control" placeholder="Entrer les étudiants de la formation" name="etudiants">
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea class="form-control mb-4" placeholder="Veuillez saisir la description de la formation" rows="3" name="description"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-pill btn-primary" type="submit">Enregister</button>
+            </div>
         </form>
     </div>
 </div>
-
-
-
 @endsection
+
