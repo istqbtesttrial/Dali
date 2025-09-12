@@ -59,7 +59,6 @@
                     <div class="dropdown-menu fade-down m-0">
                         <a href="team.html" class="dropdown-item">Notre équipe</a>
                         <a href="testimonial.html" class="dropdown-item">Témoignages</a>
-                        <a href="404.html" class="dropdown-item">Page 404</a>
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
