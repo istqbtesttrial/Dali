@@ -10,7 +10,7 @@
             <!--Page header-->
             <div class="page-header">
                 <div class="page-leftheader">
-                    <h4 class="page-title mb-0 text-primary"><i class="ion-clipboard"></i>Liste des absences</h4>
+                    <h4 class="page-title mb-0 text-primary"><i class="ion-clipboard"></i>Liste des formations</h4>
                 </div>
                 <div class="page-rightheader">
                     <div class="btn-list">
@@ -53,21 +53,24 @@
                             <div class="">
                                 <div class="table-responsive">
                                 <div id="example_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="example_length"><label><select name="example_length" aria-controls="example" class="form-select form-select-sm select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select>                                       
-                                        <a class="btn bg-success-transparent" href = "{{route('absences.create')}}"><i class="fe fe-edit"></i>Ajouter une absence </a>
+                                        <a class="btn bg-success-transparent" href = "{{route('formation.create')}}"><i class="fe fe-edit"></i>Ajouter une formation </a>
                                     </div>
                                     <div class="dt-buttons btn-group flex-wrap">
                                             </div> </div></div><div class="col-sm-12 col-md-6">
 
-                                                @if ($absences->count ()>0)
+                                                @if ($formations->count ()>0)
                                                 <div class="row"><div class="col-sm-12">
                                                     <table id="example" class="table table-bordered text-nowrap key-buttons dataTable no-footer" role="grid" aria-describedby="example_info">
 													<thead class="thead-dark">
 														<tr role="row">
                                                             <th scope="col">ID</th>
-                                                            <th scope="col">Nom de stagiaire absent</th>
-                                                            <th scope="col">Prenom de stagiaire absent</th>
-                                                            <th scope="col">Date</th>
-                                                            <th scope="col">Justification</th>
+                                                            <th scope="col">Niveau</th>
+                                                            <th scope="col">Spécialité</th>
+                                                            <th scope="col">Groupe</th>
+                                                            <th scope="col">Formateurs</th>
+                                                            <th scope="col">Matières</th>
+                                                            <th scope="col">Étudiants</th>
+                                                            <th scope="col">Description</th>
                                                             <th scope="col">Actions</th>
                                                         </tr>
 													</thead>
@@ -76,16 +79,19 @@
                                                     @php
                                                         $i= 1;
                                                     @endphp
-                                                    @foreach ($absences as $item )
+                                                    @foreach ($formations as $item )
 
                                                     <tr>
                                                         <th scope="row">{{$i++}}</th>
-                                                        <td>{{$item->nom}}</td>
-                                                        <td>{{$item->prenom}}</td>
-                                                        <td>{{$item->date}}</td>
-                                                        <td>{{$item->justification}}</td>
+                                                        <td>{{$item->niveau}}</td>
+                                                        <td>{{$item->specialite}}</td>
+                                                        <td>{{$item->groupe}}</td>
+                                                        <td>{{$item->formateurs}}</td>
+                                                        <td>{{$item->matieres}}</td>
+                                                        <td>{{$item->etudiants}}</td>
+                                                        <td>{{$item->description}}</td>
                                                         <td>  <a class="text-success" href = ""><button type="button" class="btn bg-warning-transparent"><i class="zmdi zmdi-collection-text"></i></button></a> &nbsp;&nbsp;
-                                                            <a class="text-warning" href = "{{route('absence.delete', ['id'=> $item->id])}}"><button type="button" class="btn bg-teal-transparent"><i class="fe fe-trash"></i></button> </a>&nbsp;&nbsp;</td>
+                                                            <a class="text-warning" href = "{{route('formation.delete', ['id'=> $item->id])}}"><button type="button" class="btn bg-teal-transparent"><i class="fe fe-trash"></i></button> </a>&nbsp;&nbsp;</td>
                                                       </tr>
                                                     @endforeach
                                                 </tbody>
@@ -93,7 +99,7 @@
                                                 @else
                                                 <div class="coll">
                                                 <div class="alert alert-danger" role="alert">
-                                                 pas des absences!
+                                                 pas de formations!
                                                 </div>
                                                 </div>
                                                 @endif
