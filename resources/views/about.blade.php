@@ -80,11 +80,14 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <h6 class="section-title bg-white text-start text-primary pe-3">À propos de nous</h6>
-                    <h1 class="mb-4">Bienvenue sur Ecole de Formation des Cadres</h1>
-                    <p><strong>Statut&nbsp;:</strong> Structure d’enseignement privée</p>
-                    <p><strong>N° d’enregistrement&nbsp;:</strong> 09.986-11-1</p>
-                    <p><strong>Mention&nbsp;:</strong> Diplômes homologués (BTP – BTS)</p>
-                    <p class="mb-4">L’EFC a pour mission de former des cadres compétents grâce à une pédagogie de qualité, un encadrement personnalisé et une forte insertion professionnelle.</p>
+                    <h1 class="mb-4">Bienvenue sur l'École de Formation des Cadres</h1>
+                    <p><strong>Fondation&nbsp;:</strong> Juin&nbsp;2009, agréée par le ministère de la Formation professionnelle et de l’Emploi (agrément n°&nbsp;09-986-11-1)</p>
+                    <p><strong>Responsable&nbsp;:</strong> Jamel Ben Salah</p>
+                    <p><strong>Statut&nbsp;:</strong> Structure d’enseignement privée délivrant des diplômes homologués <abbr title="Brevet de Technicien Supérieur">BTS</abbr> et <abbr title="Brevet de Technicien Professionnel">BTP</abbr></p>
+                    <p><strong>Adresses&nbsp;:</strong> 12&nbsp;Rue de Grèce, Tunis &amp; 22&nbsp;Rue El&nbsp;Jazira, Tunis</p>
+                    <p><strong>Téléphones&nbsp;:</strong> +216&nbsp;29&nbsp;769&nbsp;773 – +216&nbsp;25&nbsp;131&nbsp;052 – +216&nbsp;29&nbsp;023&nbsp;758 – +216&nbsp;22&nbsp;999&nbsp;213</p>
+                    <p><strong>Email&nbsp;:</strong> <a href="mailto:efcformation01@gmail.com">efcformation01@gmail.com</a></p>
+                    <p class="mb-4"><em>«&nbsp;Votre succès c'est notre mission&nbsp;».</em> L’EFC forme des cadres qualifiés grâce à une pédagogie de qualité et une forte insertion professionnelle dans des domaines tels que l'informatique de gestion, la comptabilité &amp; finance, le commerce international et le BTP.</p>
                     <div class="row gy-2 gx-4 mb-4">
                         <div class="col-sm-6">
                             <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Instructeurs qualifiés</p>
