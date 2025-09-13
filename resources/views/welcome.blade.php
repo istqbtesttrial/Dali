@@ -510,9 +510,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Contact</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Route Ennagra n°12, quartier Mrezga – Nabeul, Tunisie</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>25 131 052 – 22 999 213 – 70 038 087 – 50 874 106</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>www.efc.tn</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
