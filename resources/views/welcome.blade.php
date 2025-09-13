@@ -65,22 +65,23 @@
             </div>
 
               @if (Route::has('login'))
-        <ul class="navbar-nav ml-auto">
-            @auth
-              <li class="nav-item">
-               <a class="nav-link" href="{{ route('home') }}">Accueil</a>
-               </li>
-            @else
-               <li class="nav-item">
-               <a class="nav-link" href="{{ route('login') }}">Se connecter</a>
-              </li>
-               
-        </ul>
-        @endif
-         @if (Route::has('register'))
-            <a href="{{ route('register') }}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">S'inscrire<i class="fa fa-arrow-right ms-3"></i></a>
-         @endif
-         @endauth
+                  @auth
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item">
+                              <a class="nav-link" href="{{ route('home') }}">Accueil</a>
+                          </li>
+                      </ul>
+                  @else
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item">
+                              <a class="nav-link" href="{{ route('login') }}">Se connecter</a>
+                          </li>
+                      </ul>
+                      @if (Route::has('register'))
+                          <a href="{{ route('register') }}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">S'inscrire<i class="fa fa-arrow-right ms-3"></i></a>
+                      @endif
+                  @endauth
+              @endif
           </div>
     </nav>
     <!-- Navbar End -->
