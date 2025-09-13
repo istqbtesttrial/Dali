@@ -190,19 +190,22 @@
                             <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Formateurs qualifiés</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Cours en ligne</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Ressources pédagogiques en ligne</p>
                         </div>
                         <div class="col-sm-6">
                             <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Certificat international</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Formateurs qualifiés</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Stages en entreprise</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Cours en ligne</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Ateliers pratiques</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Certificat international</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Accompagnement carrière</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Réseau d'anciens</p>
                         </div>
                     </div>
                     <a class="btn btn-primary py-3 px-5 mt-2" href="">En savoir plus</a>
