@@ -8,6 +8,7 @@ class StudentDashboardController extends Controller
 {
     public function index()
     {
+
         try {
             $formations = Formation::with('courses.resources', 'courses.schedules', 'instructors')->get();
         } catch (\Throwable $e) {
