@@ -9,13 +9,6 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
                     <h1 class="display-3 text-white animated slideInDown">À propos de nous</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Accueil</a></li>
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">À propos</li>
-                        </ol>
-                    </nav>
                 </div>
             </div>
         </div>
