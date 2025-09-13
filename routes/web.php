@@ -49,3 +49,8 @@ Route::get('/formations', [FormationController::class, 'index'])->name('formatio
 Route::get('/suggestion/create', [SuggestionController::class, 'create'])->name('suggestion.create');
 Route::post('/suggestion/store', [SuggestionController::class, 'store'])->name('suggestion.store');
 
+
+Route::view('/about', 'about')->name('about');
+Route::view('/team', 'team')->name('team');
+Route::view('/testimonial', 'testimonial')->name('testimonial');
+Route::view('/contact', 'contact')->name('contact');
