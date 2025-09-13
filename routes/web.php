@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EtudiantController;
 use App\Http\Controllers\FormationController;
 use App\Http\Controllers\SuggestionController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,7 @@ Auth::routes();
 
 
 Route::middleware('can:admin')->group(function () {
+    Route::get('/espace-admin', [AdminController::class, 'index'])->name('espace-admin');
     Route::get('/etudiants', [EtudiantController::class, 'index'])->name('etudiants.index');
     Route::delete('/etudiants/{id}', [EtudiantController::class, 'destroy'])->name('etudiants.destroy');
 
@@ -55,4 +57,3 @@ Route::view('/team', 'team')->name('team');
 Route::view('/testimonial', 'testimonial')->name('testimonial');
 Route::view('/contact', 'contact')->name('contact');
 Route::view('/espace-etudiant', 'espace-etudiant')->name('espace-etudiant');
-Route::view('/espace-admin', 'espace-admin')->name('espace-admin');
