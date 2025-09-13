@@ -44,3 +44,8 @@ Route::post('/suggestion/store', [SuggestionController::class, 'store'])->name('
 Route::get('/suggestion/edit/{id}', [SuggestionController::class, 'edit'])->name('suggestion.edit');
 Route::post('/suggestion/update/{id}', [SuggestionController::class, 'update'])->name('suggestion.update');
 
+
+Route::view('/about', 'about')->name('about');
+Route::view('/team', 'team')->name('team');
+Route::view('/testimonial', 'testimonial')->name('testimonial');
+Route::view('/contact', 'contact')->name('contact');
