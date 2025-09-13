@@ -65,8 +65,8 @@
 
     <ul class="side-menu app-sidebar3">
 
-        @if(Auth::check() && Auth::user()->id == 1)
-            {{-- Sidebar pour l’admin (id = 1) --}}
+        @can('admin')
+            {{-- Sidebar pour l’admin --}}
             <li class="slide">
                 <a class="side-menu__item" href="">
                     <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
@@ -126,7 +126,7 @@
                     <span class="side-menu__label">Mes Suggestions</span>
                 </a>
             </li>
-        @endif
+        @endcan
 
     </ul>
 </aside>
