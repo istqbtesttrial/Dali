@@ -7,8 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 
 class Formation extends Model
 {
-   
-    protected $fillable = ['niveau', 'specialite','formateurs', 'matieres' , 'description' ,'etudiants', 'groupe'];
+    use HasFactory;
 
-   
+    protected $fillable = ['niveau', 'specialite', 'description'];
+
+    public function courses()
+    {
+        return $this->hasMany(Course::class);
+    }
+
+    public function instructors()
+    {
+        return $this->belongsToMany(Instructor::class);
+    }
 }
+
