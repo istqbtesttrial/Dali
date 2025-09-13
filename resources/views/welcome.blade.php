@@ -136,7 +136,7 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
                             <h5 class="mb-3">Formateurs qualifiés</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <p>Encadrement assuré par des spécialistes expérimentés du secteur.</p>
                         </div>
                     </div>
                 </div>
@@ -145,7 +145,7 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-globe text-primary mb-4"></i>
                             <h5 class="mb-3">Cours en ligne</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <p>Plateforme d'apprentissage en ligne pour étudier à votre rythme.</p>
                         </div>
                     </div>
                 </div>
@@ -154,7 +154,7 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-home text-primary mb-4"></i>
                             <h5 class="mb-3">Projets maison</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <p>Mise en pratique via des projets concrets et ateliers.</p>
                         </div>
                     </div>
                 </div>
@@ -163,7 +163,7 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
                             <h5 class="mb-3">Bibliothèque</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <p>Accès à une bibliothèque riche en ressources pédagogiques.</p>
                         </div>
                     </div>
                 </div>
@@ -222,8 +222,8 @@
     <div class="container-xxl py-5 category">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Categories</h6>
-                <h1 class="mb-5">Catégories de cours</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">Domaines</h6>
+                <h1 class="mb-5">Domaines de formation</h1>
             </div>
             <div class="row g-3">
                 <div class="col-lg-7 col-md-6">
@@ -232,7 +232,7 @@
                             <a class="position-relative d-block overflow-hidden" href="">
                                 <img class="img-fluid" src="img/cat-1.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Conception web</h5>
+                                    <h5 class="m-0">Informatique de gestion</h5>
                                     <small class="text-primary">49 cours</small>
                                 </div>
                             </a>
@@ -241,7 +241,7 @@
                             <a class="position-relative d-block overflow-hidden" href="">
                                 <img class="img-fluid" src="img/cat-2.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Design graphique</h5>
+                                    <h5 class="m-0">Comptabilité &amp; Finance</h5>
                                     <small class="text-primary">49 cours</small>
                                 </div>
                             </a>
@@ -250,7 +250,7 @@
                             <a class="position-relative d-block overflow-hidden" href="">
                                 <img class="img-fluid" src="img/cat-3.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Montage vidéo</h5>
+                                    <h5 class="m-0">Commerce international</h5>
                                     <small class="text-primary">49 cours</small>
                                 </div>
                             </a>
@@ -261,7 +261,7 @@
                     <a class="position-relative d-block h-100 overflow-hidden" href="">
                         <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt="" style="object-fit: cover;">
                         <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
-                            <h5 class="m-0">Marketing en ligne</h5>
+                            <h5 class="m-0">Bâtiment &amp; Travaux Publics</h5>
                             <small class="text-primary">49 cours</small>
                         </div>
                     </a>
@@ -276,8 +276,8 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6>
-                <h1 class="mb-5">Cours populaires</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">Formations</h6>
+                <h1 class="mb-5">Formations populaires</h1>
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -298,7 +298,7 @@
                                 <small class="fa fa-star text-primary"></small>
                                 <small>(123)</small>
                             </div>
-                            <h5 class="mb-4">Cours de conception et de développement web pour débutants</h5>
+                            <h5 class="mb-4">BTS Informatique de gestion</h5>
                         </div>
                         <div class="d-flex border-top">
                             <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
@@ -325,7 +325,7 @@
                                 <small class="fa fa-star text-primary"></small>
                                 <small>(123)</small>
                             </div>
-                            <h5 class="mb-4">Cours de conception et de développement web pour débutants</h5>
+                            <h5 class="mb-4">BTS Comptabilité &amp; Finance</h5>
                         </div>
                         <div class="d-flex border-top">
                             <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
@@ -352,7 +352,7 @@
                                 <small class="fa fa-star text-primary"></small>
                                 <small>(123)</small>
                             </div>
-                            <h5 class="mb-4">Cours de conception et de développement web pour débutants</h5>
+                            <h5 class="mb-4">BTS Commerce international</h5>
                         </div>
                         <div class="d-flex border-top">
                             <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
