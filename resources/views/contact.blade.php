@@ -17,18 +17,16 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-md-4">
-                    <h5 class="text-primary mb-3">Adresses</h5>
-                    <p class="mb-2">12 Rue de Grèce, Tunis, Tunisie</p>
-                    <p>22 Rue El Jazira, Tunis</p>
+                    <h5 class="text-primary mb-3">Adresse</h5>
+                    <p class="mb-2">Route Ennagra n°12, quartier Mrezga – Nabeul, Tunisie</p>
                 </div>
                 <div class="col-md-4">
                     <h5 class="text-primary mb-3">Téléphones</h5>
-                    <p class="mb-2">+216 29 769 773</p>
-                    <p>+216 25 131 052 / +216 29 023 758 / +216 22 999 213</p>
+                    <p class="mb-2">25 131 052 – 22 999 213 – 70 038 087 – 50 874 106</p>
                 </div>
                 <div class="col-md-4">
-                    <h5 class="text-primary mb-3">Email &amp; Réseaux</h5>
-                    <p class="mb-2"><a href="mailto:efcformation01@gmail.com">efcformation01@gmail.com</a></p>
+                    <h5 class="text-primary mb-3">Site Web &amp; Réseaux</h5>
+                    <p class="mb-2"><a href="https://www.efc.tn" target="_blank">www.efc.tn</a></p>
                     <p><a href="https://www.facebook.com/www.efc.tn/" target="_blank">facebook.com/www.efc.tn</a></p>
                 </div>
             </div>
