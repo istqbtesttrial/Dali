@@ -57,6 +57,6 @@ Route::view('/about', 'about')->name('about');
 Route::view('/team', 'team')->name('team');
 Route::view('/testimonial', 'testimonial')->name('testimonial');
 Route::view('/contact', 'contact')->name('contact');
-Route::view('/espace-etudiant', 'espace-etudiant')->name('espace-etudiant');
+Route::get('/espace-etudiant', [StudentDashboardController::class, 'index'])->name('espace-etudiant');
 Route::view('/espace-admin-demo', 'espace-admin-demo')->name('espace-admin-demo');
 
