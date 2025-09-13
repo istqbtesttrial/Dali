@@ -5,6 +5,7 @@ use App\Http\Controllers\EtudiantController;
 use App\Http\Controllers\FormationController;
 use App\Http\Controllers\SuggestionController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\StudentDashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,3 +59,4 @@ Route::view('/testimonial', 'testimonial')->name('testimonial');
 Route::view('/contact', 'contact')->name('contact');
 Route::view('/espace-etudiant', 'espace-etudiant')->name('espace-etudiant');
 Route::view('/espace-admin-demo', 'espace-admin-demo')->name('espace-admin-demo');
+
