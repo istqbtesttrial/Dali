@@ -5,7 +5,6 @@
 
         <div class="side-app">
 
-
             <!--Page header-->
             <div class="page-header">
                 <div class="page-leftheader">
@@ -36,80 +35,46 @@
                 <div class="col-12">
 
                     <div class="card">
-                         <div class="card-body">
-                                    <div class="btn-list">
-                                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked="">
-                                            
-                                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                                            
-                                        </div>
-                                    </div>
+                        <div class="card-body">
+                            <div class="btn-list">
+                                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked="">
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
                                 </div>
-
+                            </div>
+                        </div>
 
                         <div class="card-body">
-                            <div class="">
-                                <div class="table-responsive">
-                                <div id="example_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="example_length"><label><select name="example_length" aria-controls="example" class="form-select form-select-sm select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select>                                       
-        
+                            <div class="table-responsive">
+                                @if ($etudiants->count() > 0)
+                                    @component('partials.table', [
+                                        'headers' => ['ID', 'Nom', 'Prenom', 'Email', "Date d\'inscription", 'Niveau', 'Spécialité', 'Actions']
+                                    ])
+                                        @php $i = 1; @endphp
+                                        @foreach ($etudiants as $item)
+                                            <tr>
+                                                <th scope="row">{{ $i++ }}</th>
+                                                <td>{{ $item->name }}</td>
+                                                <td>{{ $item->prenom }}</td>
+                                                <td>{{ $item->email }}</td>
+                                                <td>{{ $item->created_at }}</td>
+                                                <td>{{ $item->niveau }}</td>
+                                                <td>{{ $item->specialite }}</td>
+                                                <td>
+                                                    <form action="{{ route('etudiants.destroy', $item->id) }}" method="POST" onsubmit="return confirm('Voulez-vous vraiment supprimer cet étudiant ?');">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="submit" class="btn bg-teal-transparent"><i class="fe fe-trash"></i></button>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                        @endforeach
+                                    @endcomponent
+                                @else
+                                    <div class="alert alert-danger" role="alert">
+                                        pas des étudiants!
                                     </div>
-                                    <div class="dt-buttons btn-group flex-wrap">
-                                            </div> </div></div><div class="col-sm-12 col-md-6">
-
-                                                @if ($etudiants->count ()>0)
-                                                <div class="row"><div class="col-sm-12">
-                                                    <table id="example" class="table table-bordered text-nowrap key-buttons dataTable no-footer" role="grid" aria-describedby="example_info">
-													<thead class="thead-dark">
-														<tr role="row">
-                                                            <th scope="col">ID</th>
-                                                            <th scope="col">Nom</th>
-                                                            <th scope="col">Prenom</th>
-                                                            <th scope="col">Email</th>
-                                                            <th scope="col">Date d'inscription</th>
-                                                            <th scope="col">Niveau</th>
-                                                            <th scope="col">Spécialité</th>
-                                                            <th scope="col">Actions</th>
-                                                        </tr>
-													</thead>
-													<tbody>
-
-                                                    @php
-                                                        $i= 1;
-                                                    @endphp
-                                                    @foreach ($etudiants as $item )
-
-                                                    <tr>
-                                                        <th scope="row">{{$i++}}</th>
-                                                        <td>{{$item->name}}</td>
-                                                        <td>{{$item->prenom}}</td>
-                                                        <td>{{$item->email}}</td>
-                                                         <td>{{$item->created_at}}</td>
-                                                        <td>{{$item->niveau}}</td>
-                                                        <td>{{$item->specialite}}</td>
-                                                        <td>
-                                                          
-                                                   <form action="{{ route('etudiants.destroy', $item->id) }}" method="POST" onsubmit="return confirm('Voulez-vous vraiment supprimer cet étudiant ?');">
-                                                      @csrf
-                                                         @method('DELETE')
-                                                     <button type="submit" class="btn bg-teal-transparent"><i class="fe fe-trash"></i></button>
-                                                         </form>
-                                                       </td>
-                                                    @endforeach
-                                                </tbody>
-											   	</table>
-                                                @else
-                                                <div class="coll">
-                                                <div class="alert alert-danger" role="alert">
-                                                 pas des étudiants!
-                                                </div>
-                                                </div>
-                                                @endif
-                                            </div>
-                                        </div>
-                                    <div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="example_info" role="status" aria-live="polite"></div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="example_previous"><a href="#" aria-controls="example" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="example" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="4" tabindex="0" class="page-link">4</a></li><li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="5" tabindex="0" class="page-link">5</a></li><li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="6" tabindex="0" class="page-link">6</a></li><li class="paginate_button page-item next" id="example_next"><a href="#" aria-controls="example" data-dt-idx="7" tabindex="0" class="page-link">Next</a></li></ul></div></div></div></div>
-
-                                </div>
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -120,23 +85,5 @@
 
 
         </div>
-
-
-
-  @endsection
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
+@endsection
