@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EtudiantController;
 use App\Http\Controllers\FormationController;
 use App\Http\Controllers\SuggestionController;
+use App\Http\Controllers\StudentDashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,5 +55,5 @@ Route::view('/about', 'about')->name('about');
 Route::view('/team', 'team')->name('team');
 Route::view('/testimonial', 'testimonial')->name('testimonial');
 Route::view('/contact', 'contact')->name('contact');
-Route::view('/espace-etudiant', 'espace-etudiant')->name('espace-etudiant');
+Route::get('/espace-etudiant', [StudentDashboardController::class, 'index'])->name('espace-etudiant');
 Route::view('/espace-admin', 'espace-admin')->name('espace-admin');
