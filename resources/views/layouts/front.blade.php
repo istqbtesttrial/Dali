@@ -59,7 +59,7 @@
                     <a href="{{ route('team') }}" class="dropdown-item">Notre équipe</a>
                     <a href="{{ route('testimonial') }}" class="dropdown-item">Témoignages</a>
                     <a href="{{ route('espace-etudiant') }}" class="dropdown-item">Espace étudiant</a>
-                    <a href="{{ route('espace-admin') }}" class="dropdown-item">Espace admin</a>
+                    <a href="{{ route('espace-enseignant') }}" class="dropdown-item">Espace enseignant</a>
                 </div>
             </div>
             <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>

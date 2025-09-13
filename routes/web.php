@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EtudiantController;
 use App\Http\Controllers\FormationController;
 use App\Http\Controllers\SuggestionController;
-use App\Http\Controllers\AdminController;
 use App\Http\Controllers\StudentDashboardController;
 
 /*
@@ -27,7 +26,6 @@ Auth::routes();
 
 
 Route::middleware('can:admin')->group(function () {
-    Route::get('/espace-admin', [AdminController::class, 'index'])->name('espace-admin');
     Route::get('/etudiants', [EtudiantController::class, 'index'])->name('etudiants.index');
     Route::delete('/etudiants/{id}', [EtudiantController::class, 'destroy'])->name('etudiants.destroy');
 
@@ -62,5 +60,4 @@ Route::middleware([])->group(function () {
     // Ancien middleware ['auth', 'can:enseignant'] retiré pour la démo
     Route::view('/espace-enseignant', 'espace-enseignant')->name('espace-enseignant');
 });
-Route::view('/espace-admin-demo', 'espace-admin-demo')->name('espace-admin-demo');
 
