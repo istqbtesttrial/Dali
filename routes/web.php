@@ -58,5 +58,9 @@ Route::view('/team', 'team')->name('team');
 Route::view('/testimonial', 'testimonial')->name('testimonial');
 Route::view('/contact', 'contact')->name('contact');
 Route::get('/espace-etudiant', [StudentDashboardController::class, 'index'])->name('espace-etudiant');
+Route::middleware([])->group(function () {
+    // Ancien middleware ['auth', 'can:enseignant'] retiré pour la démo
+    Route::view('/espace-enseignant', 'espace-enseignant')->name('espace-enseignant');
+});
 Route::view('/espace-admin-demo', 'espace-admin-demo')->name('espace-admin-demo');
 
