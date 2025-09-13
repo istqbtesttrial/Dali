@@ -182,9 +182,9 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <h6 class="section-title bg-white text-start text-primary pe-3">À propos de nous</h6>
-                    <h1 class="mb-4">Bienvenue à EFC</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <h1 class="mb-4">Bienvenue à l'École de Formation des Cadres</h1>
+                    <p class="mb-4">Créée en 2009 à Tunis, l'EFC est une école privée agréée par le ministère de la Formation professionnelle et de l'Emploi. Notre mission est de former des cadres qualifiés grâce à des programmes homologués BTS et BTP.</p>
+                    <p class="mb-4">Nous proposons des parcours en informatique de gestion, comptabilité &amp; finance, commerce international et BTP, avec un encadrement personnalisé et une forte insertion professionnelle.</p>
                     <div class="row gy-2 gx-4 mb-4">
                         <div class="col-sm-6">
                             <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Formateurs qualifiés</p>
