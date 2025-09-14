@@ -62,14 +62,26 @@
         <form method="POST" action="{{ route('register') }}">
             @csrf
 
+            <!-- Username -->
+            <label class="label">Nom d'utilisateur</label>
+            <input class="input @error('username') is-invalid @enderror"
+                   type="text"
+                   name="username"
+                   value="{{ old('username') }}"
+                   placeholder="Choisissez un pseudo"
+                   required autofocus>
+            @error('username')
+                <span class="invalid-feedback"><strong>{{ $message }}</strong></span>
+            @enderror
+
             <!-- Nom -->
             <label class="label">Nom complet</label>
             <input class="input @error('name') is-invalid @enderror"
-                   type="text" 
-                   name="name" 
-                   value="{{ old('name') }}" 
-                   placeholder="Votre nom" 
-                   required autofocus>
+                   type="text"
+                   name="name"
+                   value="{{ old('name') }}"
+                   placeholder="Votre nom"
+                   required>
             @error('name')
                 <span class="invalid-feedback"><strong>{{ $message }}</strong></span>
             @enderror
